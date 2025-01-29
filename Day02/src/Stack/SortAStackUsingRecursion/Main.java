@@ -1,9 +1,7 @@
 package Stack.SortAStackUsingRecursion;
-
 import java.util.Stack;
 
 public class Main {
-
     public static void main(String[] args) {
         Stack<Integer> stack = new Stack<>();
         stack.push(7);
@@ -16,7 +14,5 @@ public class Main {
         sort.sortStack(stack);
 
         System.out.print("Stack Elements after sorting are : "+ stack);
-
     }
-
 }
