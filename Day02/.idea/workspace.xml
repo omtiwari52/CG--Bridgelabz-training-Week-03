@@ -28,6 +28,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HashMap.FindAllSubarrayswithZeroSum.Main.executor": "Run",
+    "Application.HashMap.LongestConsecutiveSequence.Main.executor": "Run",
     "Application.HashMap.PairwithGivenSum.Main.executor": "Run",
     "Application.HashMap.TwoSumProblem.Main.executor": "Run",
     "Application.Main.executor": "Run",
@@ -38,13 +39,39 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.HashMap.PairwithGivenSum.Main">
+  <component name="RunManager" selected="Application.HashMap.ImplementCustomHashMap.Main">
     <configuration name="HashMap.FindAllSubarrayswithZeroSum.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HashMap.FindAllSubarrayswithZeroSum.Main" />
       <module name="Day02" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="HashMap.FindAllSubarrayswithZeroSum.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashMap.ImplementCustomHashMap.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HashMap.ImplementCustomHashMap.Main" />
+      <module name="Day02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HashMap.ImplementCustomHashMap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashMap.LongestConsecutiveSequence.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HashMap.LongestConsecutiveSequence.Main" />
+      <module name="Day02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HashMap.LongestConsecutiveSequence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,19 +92,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashMap.TwoSumProblem.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HashMap.TwoSumProblem.Main" />
-      <module name="Day02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HashMap.TwoSumProblem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Queue.CircularTourProblem.Main" />
       <module name="Day02" />
@@ -91,26 +105,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Queue.SlidingWindowProblem.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Queue.SlidingWindowProblem.Main" />
-      <module name="Day02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Queue.SlidingWindowProblem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HashMap.ImplementCustomHashMap.Main" />
+        <item itemvalue="Application.HashMap.LongestConsecutiveSequence.Main" />
         <item itemvalue="Application.HashMap.PairwithGivenSum.Main" />
         <item itemvalue="Application.HashMap.FindAllSubarrayswithZeroSum.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.HashMap.TwoSumProblem.Main" />
-        <item itemvalue="Application.Queue.SlidingWindowProblem.Main" />
       </list>
     </recent_temporary>
   </component>
