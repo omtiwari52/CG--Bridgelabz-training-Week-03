@@ -1,30 +1,30 @@
 package Queue.CircularTourProblem;
 
+import java.util.Deque;
 import java.util.LinkedList;
-import java.util.Queue;
 
 public class CircularTour {
     public static int findStartingPoint(int[] petrol, int[] distance) {
         int n = petrol.length;
-        Queue<Integer> queue = new LinkedList<>();
-        int totalSurplus = 0, currentSurplus = 0;
-        int start = 0;
+        Deque<Integer> deque = new LinkedList<>();
+        int totalSurplus = 0, surplus = 0, start = 0;
 
+        // Traverse petrol pumps
         for (int i = 0; i < n; i++) {
-            int balance = petrol[i] - distance[i];
-            totalSurplus += balance;
-            currentSurplus += balance;
-            queue.offer(i); // Add petrol pump index to queue
+            int netGain = petrol[i] - distance[i];
+            totalSurplus += netGain;
+            surplus += netGain;
+            deque.addLast(i);
 
-            // If surplus becomes negative, reset the queue
-            if (currentSurplus < 0) {
-                start = i + 1; // Move to next possible starting point
-                currentSurplus = 0;
-                queue.clear(); // Reset the queue as previous sequence is invalid
+            // If surplus becomes negative, remove pumps from the front
+            while (surplus < 0 && !deque.isEmpty()) {
+                int removedPump = deque.pollFirst(); // Remove the first pump
+                surplus -= (petrol[removedPump] - distance[removedPump]); // Adjust surplus
+                start = removedPump + 1; // Move start forward
             }
         }
 
-        // If total surplus is negative, a complete tour is not possible
-        return (totalSurplus >= 0) ? start : -1;
+        // If total surplus is negative, no circular tour is possible
+        return (totalSurplus < 0) ? -1 : start;
     }
 }
