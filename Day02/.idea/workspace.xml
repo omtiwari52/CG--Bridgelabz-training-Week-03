@@ -36,13 +36,26 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.HashMap.TwoSumProblem.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="HashMap.TwoSumProblem.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HashMap.TwoSumProblem.Main" />
       <module name="Day02" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="HashMap.TwoSumProblem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Queue.CircularTourProblem.Main" />
+      <module name="Day02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Queue.CircularTourProblem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,26 +102,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StockSpan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Stack.StockSpanProblem.StockSpan" />
-      <module name="Day02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Stack.StockSpanProblem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.HashMap.TwoSumProblem.Main" />
         <item itemvalue="Application.Queue.SlidingWindowProblem.Main" />
         <item itemvalue="Application.Queue.ImplementAQueueUsingStacks.Main" />
         <item itemvalue="Application.Stack.StockSpanProblem.Main" />
-        <item itemvalue="Application.StockSpan" />
       </list>
     </recent_temporary>
   </component>
