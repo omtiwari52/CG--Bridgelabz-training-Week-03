@@ -27,6 +27,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.HashMap.TwoSumProblem.Main.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.Queue.ImplementAQueueUsingStacks.Main.executor": "Run",
     "Application.Queue.SlidingWindowProblem.Main.executor": "Run",
@@ -35,13 +36,13 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Queue.SlidingWindowProblem.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Stack.SortAStackUsingRecursion.Main" />
+  <component name="RunManager" selected="Application.HashMap.TwoSumProblem.Main">
+    <configuration name="HashMap.TwoSumProblem.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HashMap.TwoSumProblem.Main" />
       <module name="Day02" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Stack.SortAStackUsingRecursion.*" />
+          <option name="PATTERN" value="HashMap.TwoSumProblem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HashMap.TwoSumProblem.Main" />
         <item itemvalue="Application.Queue.SlidingWindowProblem.Main" />
         <item itemvalue="Application.Queue.ImplementAQueueUsingStacks.Main" />
         <item itemvalue="Application.Stack.StockSpanProblem.Main" />
         <item itemvalue="Application.StockSpan" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
