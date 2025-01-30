@@ -25,21 +25,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.StockSpan.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Queue.ImplementAQueueUsingStacks.Main.executor": "Run",
+    "Application.StockSpan.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.Stack.StockSpanProblem.Main">
+}]]></component>
+  <component name="RunManager" selected="Application.Queue.ImplementAQueueUsingStacks.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Stack.SortAStackUsingRecursion.Main" />
       <module name="Day02" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Stack.SortAStackUsingRecursion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Queue.ImplementAQueueUsingStacks.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Queue.ImplementAQueueUsingStacks.Main" />
+      <module name="Day02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Queue.ImplementAQueueUsingStacks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,6 +89,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Queue.ImplementAQueueUsingStacks.Main" />
         <item itemvalue="Application.Stack.StockSpanProblem.Main" />
         <item itemvalue="Application.StockSpan" />
         <item itemvalue="Application.Main" />
