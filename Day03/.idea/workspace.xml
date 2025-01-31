@@ -30,11 +30,12 @@
   "keyToString": {
     "Application.InsertionSort.Main.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.MergeSort.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.InsertionSort.Main">
+  <component name="RunManager" selected="Application.MergeSort.Main">
     <configuration name="InsertionSort.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="InsertionSort.Main" />
       <module name="Day03" />
@@ -61,8 +62,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MergeSort.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MergeSort.Main" />
+      <module name="Day03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MergeSort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MergeSort.Main" />
         <item itemvalue="Application.InsertionSort.Main" />
         <item itemvalue="Application.Main" />
       </list>

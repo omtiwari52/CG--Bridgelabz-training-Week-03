@@ -19,7 +19,7 @@ public class Main {
         }
 
         //create an object of Sort class
-       Sort sort = new Sort();
+        Sort sort = new Sort();
 
         //invoke bubble sort method to sort the employeesID array
         sort.insertionSort(employeesID);
