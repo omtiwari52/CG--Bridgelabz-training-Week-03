@@ -20,8 +20,9 @@ public class Main {
         // sort the array
         try{
             sort.countingSort(arr);
-            System.out.print("Ages after sorting: ");
+            System.out.print("Ages after sorting: [ ");
             System.out.print(Arrays.toString(arr));
+            System.out.print("]");
         }catch (Error e){
             System.out.println("Error caught invalid input please check and re-enter");
         }

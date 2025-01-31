@@ -38,7 +38,7 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.CountingSort.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="CountingSort.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CountingSort.Main" />
       <module name="Day03" />
@@ -52,12 +52,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertionSort.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="InsertionSort.Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HeapSort.Main" />
       <module name="Day03" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="InsertionSort.*" />
+          <option name="PATTERN" value="HeapSort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.CountingSort.Main" />
         <item itemvalue="Application.SelectionSort.Main" />
         <item itemvalue="Application.QuickSort.Main" />
         <item itemvalue="Application.MergeSort.Main" />
-        <item itemvalue="Application.InsertionSort.Main" />
       </list>
     </recent_temporary>
   </component>
