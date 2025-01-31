@@ -1,27 +1,32 @@
 package CountingSort;
 
 public class SortStudentAges {
-    public void countingSort(int[] ages, int minAge, int maxAge) {
+    public void countingSort(int[] ages) {
+        int minAge = 10, maxAge = 18;
         int range = maxAge - minAge + 1;
-        int[] count = new int[range];
-        int[] output = new int[ages.length];
 
-        //Count occurrences of each age
+        // Step 1: Count array to store frequency of each age
+        int[] count = new int[range];
+
         for (int age : ages) {
-            count[age - minAge]++;
+            count[age - minAge]++; // Normalize index (e.g., age 10 maps to index 0)
         }
 
-        //Calculate cumulative frequency
-        for (int i = 1; i < range; i++) {
+        // Step 2: Compute cumulative count
+        for (int i = 1; i < count.length; i++) {
             count[i] += count[i - 1];
         }
 
+        // Step 3: Place elements in the correct position
+        int[] sortedAges = new int[ages.length];
+
         for (int i = ages.length - 1; i >= 0; i--) {
-            output[count[ages[i] - minAge] - 1] = ages[i];
-            count[ages[i] - minAge]--;
+            int age = ages[i];
+            sortedAges[count[age - minAge] - 1] = age;
+            count[age - minAge]--; // Reduce count after placing the element
         }
 
-        // Copy sorted elements back to the original array
-        System.arraycopy(output, 0, ages, 0, ages.length);
+        // Copy sorted elements back to original array
+        System.arraycopy(sortedAges, 0, ages, 0, ages.length);
     }
 }
