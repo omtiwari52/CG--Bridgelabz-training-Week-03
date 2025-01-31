@@ -21,7 +21,7 @@ public class Main {
         //create and object of sort class
         Sort sort = new Sort();
         
-        //invoke bubble sort method to sort the bookPrices array
+        //invoke merge sort method to sort the bookPrices array
         sort.mergeSort(bookPrices, 0, bookPrices.length-1);
 
         //print the sorted array

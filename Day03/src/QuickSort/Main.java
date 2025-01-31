@@ -21,7 +21,7 @@ public class Main {
         //create and object of sort class
         Product sort = new Product();
 
-        //invoke bubble sort method to sort the productPrices array
+        //invoke quick sort method to sort the productPrices array
         sort.quickSort(productPrices, 0, productPrices.length-1);
 
         //print the sorted array
