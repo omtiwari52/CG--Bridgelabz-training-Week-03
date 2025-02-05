@@ -1,7 +1,5 @@
 package com.capgemini.binary_search.search_for_a_target_value;
 
-import com.capgemini.binary_search.find_the_rotation_point.FindRotationPoint;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
