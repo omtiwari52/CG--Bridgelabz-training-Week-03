@@ -14,7 +14,7 @@ public class FindRotationPoint {
         while(left <= right){
 
             //find mid using the formula
-            mid = (left + (right - left))/2;
+            mid = left + (right - left)/2;
 
             //if we found our left and right index at same element than it's the only element remaining
             if(left == right) return left;
