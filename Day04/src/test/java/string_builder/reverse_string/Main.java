@@ -1,9 +1,9 @@
-package stringBuilder.reverseString;
+package string_builder.reverse_string;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import static StringBuilder.ReverseAString.ReverseString.reverse;
+import static string_builder.reverse_string.ReverseString.reverse;
 
 public class Main {
 

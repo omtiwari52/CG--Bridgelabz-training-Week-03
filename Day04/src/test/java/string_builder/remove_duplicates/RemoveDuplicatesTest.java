@@ -1,4 +1,4 @@
-package stringBuilder.remove_duplicates;
+package string_builder.remove_duplicates;
 
 import org.junit.jupiter.api.Test;
 
