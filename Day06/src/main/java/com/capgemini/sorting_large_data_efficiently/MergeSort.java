@@ -1,47 +1,38 @@
 package com.capgemini.sorting_large_data_efficiently;
 
+import java.util.ArrayList;
+
 public class MergeSort {
     // Method to divide the array
+    public static void merge(int[] arr, int low, int mid, int high) {
+        int left = low, right = mid + 1;
+        ArrayList<Integer> temp = new ArrayList<>();
 
-    static void divide(int[] arr, int start, int end) {
-        if (start >= end) {
-            return;
-        }
-        int mid = start + (end - start) / 2;
-        divide(arr, start, mid);
-        divide(arr, mid + 1, end);
-        merge(arr, start, end, mid);
-    }
-
-    // Corrected merge function
-    private static void merge(int[] arr, int start, int end, int mid) {
-        int[] temp = new int[end - start + 1];
-        int i = start, j = mid + 1, k = 0;
-
-        // Merge left and right subarrays
-        while (i <= mid && j <= end) {
-            if (arr[i] < arr[j]) {
-                temp[k++] = arr[i++];
+        while (left <= mid && right <= high) {
+            if (arr[left] < arr[right]) {
+                temp.add(arr[left++]);
             } else {
-                temp[k++] = arr[j++];
+                temp.add(arr[right++]);
             }
         }
 
-        // Copy remaining elements from left subarray
-        while (i <= mid) {
-            temp[k++] = arr[i++];
+        while (left <= mid) {
+            temp.add(arr[left++]);
+        }
+        while (right <= high) {
+            temp.add(arr[right++]);
         }
 
-        // Copy remaining elements from right subarray
-        System.arraycopy(temp,0,arr,start,temp.length);
-
+        for (int i = low; i <= high; i++) {
+            arr[i] = temp.get(i - low);
+        }
     }
 
-    // Public method to call mergeSort
-    public static double mergeSort(int[] arr) {
-        double timeBefore = System.nanoTime();
-        divide(arr, 0, arr.length - 1);
-        return (System.nanoTime() - timeBefore) / 1e6;
+    public static void mergeSort(int[] arr, int low, int high) {
+        if (low >= high) return;
+        int mid = (low + high) / 2;
+        mergeSort(arr, low, mid);
+        mergeSort(arr, mid + 1, high);
+        merge(arr, low, mid, high);
     }
-
 }

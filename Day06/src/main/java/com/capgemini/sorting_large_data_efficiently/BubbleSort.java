@@ -1,17 +1,15 @@
 package com.capgemini.sorting_large_data_efficiently;
 public class BubbleSort {
-    static double bubbleSort(int[] studentMark) {
-        int n = studentMark.length;
-        double timeBefore = System.nanoTime();
+    public static void bubbleSort(int[] arr) {
+        int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
-            for (int j = i; j < n ; j++) {
-                if (studentMark[i] > studentMark[j]){
-                    int temp = studentMark[i];
-                    studentMark[i] = studentMark[j];
-                    studentMark[j] = temp;
+            for (int j = 0; j < n - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
         }
-        return (System.nanoTime() - timeBefore) / 1e6;
     }
 }

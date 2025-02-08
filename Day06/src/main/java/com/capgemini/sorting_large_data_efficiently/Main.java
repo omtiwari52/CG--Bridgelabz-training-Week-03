@@ -1,6 +1,7 @@
 package com.capgemini.sorting_large_data_efficiently;
 
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,38 +22,62 @@ public class Main {
         addRandomElements.generateRandomElement(arr2, n2);
         addRandomElements.generateRandomElement(arr3, n3);
 
-        System.out.println("Time Taken By The Sorting Algorithms 1000");
-        System.out.println("---------------------------------------------");
-        // Invoke the method for the middle element
-        double timeTakenByBubbleSort1 = BubbleSort.bubbleSort(arr1);
-        double timeTakenByMergeSort1 = QuickSort.quickSort(arr1);
-        double timeTakenByQuickSort1 = MergeSort.mergeSort(arr1);
-        System.out.println(timeTakenByQuickSort1 + " Time taken by quick sort");
-        System.out.println(timeTakenByMergeSort1 + " Time taken by merge sort");
-        System.out.println(timeTakenByBubbleSort1 +" Time taken by bubble sort ");
+        System.out.println();
+        System.out.println("Time taken by algorithms for dataset size 1000");
+        System.out.println("----------------------------");
+
+        long quickStart1 = System.nanoTime();
+        QuickSort.quickSort(arr1, 0, arr1.length - 1);
+        long quickEnd1 = System.nanoTime();
+        System.out.println("Time taken by Quick Sort  : " + (TimeUnit.NANOSECONDS.toMillis(quickEnd1 - quickStart1)) + " ms");
+
+        long mergeStart1 = System.nanoTime();
+        MergeSort.mergeSort(arr1, 0, arr1.length - 1);
+        long mergeEnd1 = System.nanoTime();
+        System.out.println("Time taken by Merge Sort  : " + (TimeUnit.NANOSECONDS.toMillis(mergeEnd1 - mergeStart1)) + " ms");
+
+        long bubbleStart1 = System.nanoTime();
+        BubbleSort.bubbleSort(arr1);
+        long bubbleEnd1 = System.nanoTime();
+        System.out.println("Time taken by Bubble Sort : " + (TimeUnit.NANOSECONDS.toMillis(bubbleEnd1 - bubbleStart1)) + " ms");
 
 
+        System.out.println();
+        System.out.println("Time taken by algorithms for dataset size 10000");
+        System.out.println("----------------------------");
 
-        System.out.println("Time Taken By The Sorting Algorithms 10000");
-        System.out.println("---------------------------------------------");
-        double timeTakenByBubbleSort2 = BubbleSort.bubbleSort(arr2);
-        double timeTakenByMergeSort2 = QuickSort.quickSort(arr2);
-        double timeTakenByQuickSort2 = MergeSort.mergeSort(arr2);
-        System.out.println(timeTakenByQuickSort2 +  " Time taken by quick sort");
-        System.out.println(timeTakenByMergeSort2  + " Time taken by merge sort");
-        System.out.println(timeTakenByBubbleSort2 + " Time taken by bubble sort ");
+        long quickStart2 = System.nanoTime();
+        QuickSort.quickSort(arr2, 0, arr1.length - 1);
+        long quickEnd2 = System.nanoTime();
+        System.out.println("Time taken by Quick Sort  : " + (TimeUnit.NANOSECONDS.toMillis(quickEnd2 - quickStart2)) + " ms");
 
-        System.out.println("Time Taken By The Sorting Algorithms 1000000");
-        System.out.println("---------------------------------------------");
-        double timeTakenByMergeSort3 = QuickSort.quickSort(arr3);
-        double timeTakenByQuickSort3 = MergeSort.mergeSort(arr3);
-        System.out.println(timeTakenByQuickSort3  + " Time taken by quick sort");
-        System.out.println(timeTakenByMergeSort3 +  " Time taken by merge sort ");
+        long mergeStart2 = System.nanoTime();
+        MergeSort.mergeSort(arr2, 0, arr1.length - 1);
+        long mergeEnd2 = System.nanoTime();
+        System.out.println("Time taken by Merge Sort  : " + (TimeUnit.NANOSECONDS.toMillis(mergeEnd2 - mergeStart2)) + " ms");
 
-        // Bubble sort taken very much time and take much time to reach and calculate the time
+        long bubbleStart2 = System.nanoTime();
+        BubbleSort.bubbleSort(arr2);
+        long bubbleEnd2 = System.nanoTime();
+        System.out.println("Time taken by Bubble Sort : " + (TimeUnit.NANOSECONDS.toMillis(bubbleEnd2 - bubbleStart2)) + " ms");
 
-        double timeTakenByBubbleSort3 = BubbleSort.bubbleSort(arr3 );
-        System.out.println(timeTakenByBubbleSort3 + " Time taken by bubble sort ");
+        System.out.println();
+        System.out.println("Time taken by algorithms for dataset size 10000000");
+        System.out.println("----------------------------");
 
+        long quickStart3 = System.nanoTime();
+        QuickSort.quickSort(arr3, 0, arr1.length - 1);
+        long quickEnd3 = System.nanoTime();
+        System.out.println("Time taken by Quick Sort  : " + (TimeUnit.NANOSECONDS.toMillis(quickEnd3 - quickStart3)) + " ms");
+
+        long mergeStart3 = System.nanoTime();
+        MergeSort.mergeSort(arr3, 0, arr1.length - 1);
+        long mergeEnd3 = System.nanoTime();
+        System.out.println("Time taken by Merge Sort  : " + (TimeUnit.NANOSECONDS.toMillis(mergeEnd3 - mergeStart3)) + " ms");
+
+        long bubbleStart3 = System.nanoTime();
+        BubbleSort.bubbleSort(arr3);
+        long bubbleEnd3 = System.nanoTime();
+        System.out.println("Time taken by Bubble Sort : " + (TimeUnit.NANOSECONDS.toMillis(bubbleEnd3 - bubbleStart3)) + " ms");
     }
 }
